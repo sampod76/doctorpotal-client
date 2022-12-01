@@ -12,21 +12,21 @@ const InfoCards = () => {
             name: 'Opening Hours',
             description: 'Open 9.00 am to 5.00pm everyday',
             icon: clock,
-            bgClass: 'bg-gradient-to-r from-primary to-secondary'
+            bgclassName: 'bg-gradient-to-r from-primary to-secondary'
         },
         {
             id: 2,
             name: 'Our Locations',
             description: 'Open 9.00 am to 5.00pm everyday',
             icon: marker,
-            bgClass: 'bg-accent'
+            bgclassName: 'bg-accent'
         },
         {
             id: 3,
             name: 'Contact Us',
             description: 'Open 9.00 am to 5.00pm everyday',
             icon: phone,
-            bgClass: 'bg-gradient-to-r from-primary to-secondary'
+            bgclassName: 'bg-gradient-to-r from-primary to-secondary'
         },
     ]
 

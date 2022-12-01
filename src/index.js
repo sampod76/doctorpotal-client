@@ -4,11 +4,25 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'react-day-picker/dist/style.css';
+import ContexApi from './ContexApi/ContexApi';
+import toast, { Toaster } from 'react-hot-toast';
+import { Audio } from 'react-loader-spinner'
+import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <ContexApi>
+        <App />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
+      </ContexApi>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
